@@ -1,7 +1,25 @@
 aid: vend
 name: Vend
-description: Vend is a company surfaced as a portfolio company of point-nine and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Vend was a cloud-based retail point-of-sale and inventory management
+  software company founded in Auckland, New Zealand, backed by investors including
+  Point Nine. Lightspeed announced its acquisition of Vend in March 2021 for approximately
+  US$350 million, and the product lives on as Lightspeed Retail (X-Series). vendhq.com
+  redirects to lightspeedhq.com/vend/, and the former Vend API is documented today
+  at x-series-api.lightspeedhq.com. The X-Series API surface is profiled in the API
+  Evangelist network under the Lightspeed provider, so this profile records the acquired
+  Vend brand rather than duplicating that API.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vend.png
 url: https://raw.githubusercontent.com/api-evangelist/vend/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,19 @@ x-backed-by:
 - point-nine
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-acquired-by: lightspeed
+x-acquired-date: '2021-03-11'
+x-successor: lightspeed:retail-x-series
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Retail
+- Point of Sale
+- Commerce
+- Inventory
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +48,17 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.vendhq.com
+  url: https://www.vendhq.com
+- type: Documentation
+  url: https://x-series-api.lightspeedhq.com/
+- type: LLMsTxt
+  url: llms/vend-llms.txt
+- type: WellKnown
+  url: well-known/vend-well-known.yml
+- type: DomainSecurity
+  url: security/vend-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

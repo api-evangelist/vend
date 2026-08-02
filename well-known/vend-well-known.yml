@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for Vend's own host
+  (www.vendhq.com) and the host of the successor API documentation
+  (x-series-api.lightspeedhq.com). Vend was acquired by Lightspeed in 2021;
+  every /.well-known/ path on www.vendhq.com answers 301 to
+  https://www.lightspeedhq.com/vend/ (the acquirer's landing page), so no
+  Vend-owned well-known documents exist. The X-Series docs host serves the
+  ReadMe-style /llms.txt (saved at llms/vend-llms.txt) but 404s every
+  /.well-known/ path probed. No 200 documents were found, so no raw files were
+  saved.
+hosts:
+  - host: https://www.vendhq.com
+    note: 301 redirect for all paths to https://www.lightspeedhq.com/vend/
+    documents:
+      - path: /.well-known/security.txt
+        status: 301
+      - path: /.well-known/openid-configuration
+        status: 301
+      - path: /.well-known/oauth-authorization-server
+        status: 301
+      - path: /.well-known/api-catalog
+        status: 301
+      - path: /.well-known/ai-plugin.json
+        status: 301
+  - host: https://x-series-api.lightspeedhq.com
+    note: serves /llms.txt (200) but no /.well-known/ documents
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
