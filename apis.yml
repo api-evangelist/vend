@@ -8,6 +8,17 @@ description: Vend was a cloud-based retail point-of-sale and inventory managemen
   at x-series-api.lightspeedhq.com. The X-Series API surface is profiled in the API
   Evangelist network under the Lightspeed provider, so this profile records the acquired
   Vend brand rather than duplicating that API.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
